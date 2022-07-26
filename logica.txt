@@ -1,0 +1,12 @@
+lógica orçamento
+
+usar função length pra somar a quantidade total de letras q esta dentro da textbox ai soma tudo e subtrai 5 
+
+dps pega todas as letras a mais e multiplica por 0.5
+
+dps pega o total e soma a 15.
+
+
+
+
+letras - 5 = x * 0.5 + 15
