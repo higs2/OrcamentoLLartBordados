@@ -19,9 +19,10 @@ namespace OrcamentoLLart
       
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
+            string texto = "espaços";
             string nome = txtNome.Text.Trim(); // recebe o nome
-            int contadorLetras.Trim(); //conta as letras
-            double totalLetras.Trim(); // recebe o total de letras
+            int contadorLetras = texto.Replace(" ", "").Length;; //conta as letras
+            double totalLetras; // recebe o total de letras
             contadorLetras = nome.Length;
 
             totalLetras = contadorLetras - 5; // subtrai -5 do total de letras
