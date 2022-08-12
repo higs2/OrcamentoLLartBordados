@@ -21,7 +21,7 @@ namespace OrcamentoLLart
         {
             string nome = txtNome.Text.Trim(); // recebe o nome
             int contadorLetras.Trim(); //conta as letras
-            double totalLetras.Trim.(); // recebe o total de letras
+            double totalLetras.Trim(); // recebe o total de letras
             contadorLetras = nome.Length;
 
             totalLetras = contadorLetras - 5; // subtrai -5 do total de letras
