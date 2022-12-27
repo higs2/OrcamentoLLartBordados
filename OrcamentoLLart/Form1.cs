@@ -20,20 +20,17 @@ namespace OrcamentoLLart
       
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
-            string nome = txtNome.Text; // recebe o nome
+            string nome = txtNome.Text.Trim(); // recebe o nome
             int contadorLetras = 0; //conta as letras
         
-            double totalLetras = 0.0; // recebe o total de letras
+            double totalLetras = 0.0; // recebe o valor R$ total de letras
             contadorLetras = nome.Length;
-            nome.Replace("\\s","");
+            nome = nome.Replace(" ","");
+            
 
-            lblResultado.Text = txtNome.Text;
-
-            
-            
-            
-           
-           
+            lblResultado.Text = txtNome.Text;         
+                        
+                      
             if (txtNome.Text == "")
             {   //se o campo de texto estiver vazio esconde o resultado
                 lblResultado.Visible = false;
@@ -58,7 +55,8 @@ namespace OrcamentoLLart
                 totalLetras = contadorLetras - 5; // subtrai -5 do total de letras
                 // total de letras vezes 0.50 centavos + 15
                 totalLetras = totalLetras * 0.5 + 15;
-                lblResultado.Text = "R$: " + totalLetras +" reais"+ "\n Total de letras = " + contadorLetras + nome;
+                totalLetras.ToString().Replace(" ", "");
+                lblResultado.Text = "R$: " + totalLetras +" reais"+ "\n Total de letras = " + contadorLetras +" " + nome;
             }                        
             
 
