@@ -24,9 +24,9 @@ namespace OrcamentoLLart
             int contadorLetras = 0; //conta as letras
         
             double totalLetras = 0.0; // recebe o valor R$ total de letras
-            contadorLetras = nome.Length;
-            nome = nome.Replace(" ","");
             
+            nome = nome.Replace(" ","");
+            contadorLetras = nome.Length;
 
             lblResultado.Text = txtNome.Text;         
                         
