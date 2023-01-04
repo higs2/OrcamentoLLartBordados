@@ -47,7 +47,7 @@ namespace OrcamentoLLart
             {
                 
                 // exibi essa msg no campo lblResultado + o total de letras
-                lblResultado.Text = "R$: " + 17.00 + " reais" + "\n Total de letras = " + contadorLetras + " " + nome;
+                lblResultado.Text = "R$: " + 17.00 + " reais" + "\n Total de letras = " + contadorLetras;
 
             }
             else if(nome.Length > 5)
@@ -56,7 +56,7 @@ namespace OrcamentoLLart
                 // total de letras vezes 0.50 centavos + 17
                 totalLetras = totalLetras * 0.5 + 17;
                 totalLetras.ToString().Replace(" ", "");
-                lblResultado.Text = "R$: " + totalLetras +" reais"+ "\n Total de letras = " + contadorLetras +" " + nome;
+                lblResultado.Text = "R$: " + totalLetras +" reais"+ "\n Total de letras = " + contadorLetras;
             }                        
             
 
